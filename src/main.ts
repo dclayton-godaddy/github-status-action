@@ -6,13 +6,14 @@ import { RequestParameters } from '@octokit/types';
 
 async function run(): Promise<void> {
   const authToken: string = core.getInput('authToken');
+  const baseUrl: string = core.getInput('baseUrl');
   let octokit: Octokit | null = null;
 
   try {
     octokit = new Octokit({
       auth: authToken,
       userAgent: "github-status-action",
-      baseUrl: 'https://api.github.com',
+      baseUrl: baseUrl,
       log: {
         debug: () => { },
         info: () => { },

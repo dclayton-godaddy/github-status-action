@@ -34,6 +34,10 @@ inputs:
   target_url: 
     description: 'URL/URI to use for further details.'
     required: false
+  gitApiUrl:
+    description: 'Base URL/URI to the GitHub API.'
+    default: 'https://api.github.com'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
