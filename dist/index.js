@@ -614,7 +614,7 @@ const makeStatusRequest_1 = __importDefault(__webpack_require__(677));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         const authToken = core.getInput('authToken');
-        const baseUrl = core.getInput('baseUrl');
+        const baseUrl = core.getInput('gitApiUrl');
         let octokit = null;
         try {
             octokit = new rest_1.Octokit({

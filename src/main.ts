@@ -6,7 +6,7 @@ import { RequestParameters } from '@octokit/types';
 
 async function run(): Promise<void> {
   const authToken: string = core.getInput('authToken');
-  const baseUrl: string = core.getInput('baseUrl');
+  const baseUrl: string = core.getInput('gitApiUrl');
   let octokit: Octokit | null = null;
 
   try {
