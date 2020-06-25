@@ -616,7 +616,7 @@ function run() {
         const authToken = core.getInput('authToken');
         const baseUrl = core.getInput('gitApiUrl');
         let octokit = null;
-        console.log(authToken);
+        console.log(baseUrl);
         try {
             octokit = new rest_1.Octokit({
                 auth: authToken,

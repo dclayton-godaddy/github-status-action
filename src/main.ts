@@ -9,7 +9,7 @@ async function run(): Promise<void> {
   const baseUrl: string = core.getInput('gitApiUrl');
   let octokit: Octokit | null = null;
 
-  console.log(authToken);
+  console.log(baseUrl);
   try {
     octokit = new Octokit({
       auth: authToken,
