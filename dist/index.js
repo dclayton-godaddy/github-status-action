@@ -5754,6 +5754,7 @@ function makeStatusRequest(testCore = null) {
     request.repo = core.getInput(inputNames_1.default.repo);
     request.sha = core.getInput(inputNames_1.default.sha);
     request.target_url = core.getInput(inputNames_1.default.target_url);
+    console.log(request);
     if (!regExUsername.test(request.owner)) {
         throw new Error(exports.ERR_INVALID_OWNER);
     }
